@@ -59,7 +59,7 @@ create table tb_kucun
    gg                   varchar(50),
    bz                   varchar(50),
    dw                   varchar(10),
-   dj                   float(8,2),
+   dj                   float(10,2),
    kcsl                 int,
    primary key (id)
 );
@@ -72,7 +72,7 @@ create table tb_rkth_detail
    id                   int not null auto_increment,
    rkthID               varchar(30) not null,
    spid                 varchar(50) not null,
-   dj                   float(8,2) not null,
+   dj                   float(10,2) not null,
    sl                   int not null,
    primary key (id)
 );
@@ -84,7 +84,7 @@ create table tb_rkth_main
 (
    rkthID               varchar(30) not null,
    pzs                  float(15) not null,
-   je                   float(8,2) not null,
+   je                   float(10,2) not null,
    ysjl                 varchar(50),
    gysname              varchar(100) not null,
    rtdate               datetime not null,
@@ -102,7 +102,7 @@ create table tb_ruku_detail
    id                   int not null auto_increment,
    rkID                 varchar(30) not null,
    spid                 varchar(50) not null,
-   dj                   float(8,2) not null,
+   dj                   float(10,2) not null,
    sl                   int not null,
    primary key (id)
 );
@@ -114,7 +114,7 @@ create table tb_ruku_main
 (
    rkID                 varchar(30) not null,
    pzs                  int not null,
-   je                   float(8,2) not null,
+   je                   float(10,2) not null,
    ysjl                 varchar(50) not null,
    gysname              varchar(100) not null,
    rkdate               datetime not null,
@@ -132,7 +132,7 @@ create table tb_sell_detail
    id                   int not null auto_increment,
    sellID               varchar(30) not null,
    spid                 varchar(50) not null,
-   dj                   float(8,2) not null,
+   dj                   float(10,2) not null,
    sl                   float(15) not null,
    primary key (id)
 );
@@ -144,7 +144,7 @@ create table tb_sell_main
 (
    sellID               varchar(30) not null,
    pzs                  int not null,
-   je                   float(8,2) not null default 0,
+   je                   float(10,2) not null default 0,
    ysjl                 varchar(50) default '0',
    khname               varchar(100) not null,
    xsdate               datetime not null,
@@ -201,7 +201,7 @@ create table tb_xsth_detail
    id                   int not null auto_increment,
    xsthID               varchar(30) not null,
    spid                 varchar(50) not null,
-   dj                   float(8,2) not null,
+   dj                   float(10,2) not null,
    sl                   int not null,
    primary key (id)
 );
@@ -213,7 +213,7 @@ create table tb_xsth_main
 (
    xsthID               varchar(30) not null,
    pzs                  int not null,
-   je                   float(8,2) not null,
+   je                   float(10,2) not null,
    ysjl                 varchar(50),
    khname               varchar(100) not null,
    thdate               datetime not null,
